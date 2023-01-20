@@ -10,10 +10,9 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
 <ul>numpy</ul>
 </li>
 <h2><li>Set up and run the model</h2>
-<ul><code>cd &lt directory name&lt </code></ul>
-<ul>tensorflow</ul>
-<ul>sklearn</ul>        
-<ul>opencv</ul>
-<ul>matplotlib</ul>
-<ul>numpy</ul>
+<ul><code>cd &lt directory name&gt </code></ul>
+<ul><code>git init</code></ul>
+<ul><code>git remote add origin "&lt https url &gt"</code></ul>        
+<ul><code>git pull origin "&ltbranch name&gt"</code></ul>
+<ul><code>py modeltesting.py</code></ul>
 </li>
