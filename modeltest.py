@@ -12,17 +12,17 @@ import warnings, cv2
 from sklearn.preprocessing import LabelEncoder
 from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 
-train_dir = "dataset_new\train"
-test_dir = "dataset_new\test"
+train_dir = "dataset_new\\train"
+test_dir = "dataset_new\\test"
 print(train_dir)
-
+#dataset_new\train
 
 def load_images(directory):
     images = []
     labels = []
     
     for category in os.listdir(directory):
-        for filename in tqdm(os.listdir(directory+category)):
+        for filename in tqdm(os.listdir(directory+"\\" +category)):
             image_path = os.path.join(directory,category,filename)
             image = cv2.imread(image_path)
             image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
