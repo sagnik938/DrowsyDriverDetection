@@ -7,7 +7,7 @@ import random,shutil
 from keras.models import Sequential
 from keras.layers import Dropout,Conv2D,Flatten,Dense, MaxPooling2D, BatchNormalization
 from keras.models import load_model
-from tqdm.notebook import tqdm
+#from tqdm.notebook import tqdm
 import warnings, cv2
 from sklearn.preprocessing import LabelEncoder
 from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint

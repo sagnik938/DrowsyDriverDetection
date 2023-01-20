@@ -12,7 +12,7 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
 </li>
 
 <h2><li>Set up Environment</h2>
-<ul>Install Python 3.8.9 <a href = "https://www.python.org/downloads/"></a></ul>
+<ul>Install Python 3.8.9 <a href = "https://www.python.org/downloads/">Python</a></ul>
 <ul>Install Tensorflow
     <ul><code>py -m pip install tensorflow</code>
     </ul>
@@ -23,6 +23,10 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
 </ul>
 <ul>Install opencv
     <ul><code>py -m pip install opencv-python</code>
+    </ul>
+</ul>
+<ul>Install sklearn
+    <ul><code>python3 -m pip install scikit-learn</code>
     </ul>
 </ul>
 </li>
