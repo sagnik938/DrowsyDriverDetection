@@ -10,7 +10,7 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
 <ul>numpy</ul>
 </li>
 <h2><li>Set up and run the model</h2>
-<ul><code>cd <directory nam> </code></ul>
+<ul><code>cd &lt directory name&lt </code></ul>
 <ul>tensorflow</ul>
 <ul>sklearn</ul>        
 <ul>opencv</ul>
