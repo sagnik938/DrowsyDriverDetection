@@ -81,12 +81,21 @@ model_checkpoint = ModelCheckpoint(filepath=checkpoint_filename,monitor='val_acc
 
 k = cnn.fit(x=X_train,
             y=y_train,
-            epochs=200,
+            epochs=20,
             batch_size=32,
             validation_data=(X_test,y_test),
             callbacks=[early_stopping,reduce_lr,model_checkpoint])
 
 cnn.load_weights(checkpoint_filename)
+
+plt.plot(k.history['accuracy'], label='train acc')
+plt.plot(k.history['val_accuracy'], label='val acc')
+plt.xlabel('Number of Epochs')
+plt.ylabel('Accuracy')
+plt.title('Accuracy Graph')
+plt.legend()
+plt.show()
+plt.savefig('AccVal_acc.jpg')
 
 plt.figure(figsize=(12,8))
 plt.plot(k.history['loss'],'r',label='train loss')
@@ -95,3 +104,32 @@ plt.xlabel('Number of Epochs')
 plt.ylabel('Loss')
 plt.title('Loss Graph')
 plt.legend()
+plt.show()
+plt.savefig('LossVal_loss.jpg')
+
+y_pred = cnn.predict(X_test)
+
+#y_pred=np.argmax(y_pred, axis=1)
+#y_test=np.argmax(y_test, axis=1)
+conf_matrix = confusion_matrix(y_true=y_test, y_pred=y_pred)
+#
+# Print the confusion matrix using Matplotlib
+#
+fig, ax = plt.subplots(figsize=(5, 5))
+ax.matshow(conf_matrix, cmap=plt.cm.Oranges, alpha=0.3)
+for i in range(conf_matrix.shape[0]):
+    for j in range(conf_matrix.shape[1]):
+        ax.text(x=j, y=i,s=conf_matrix[i, j], va='center', ha='center', size='xx-large')
+ 
+plt.xlabel('Predictions', fontsize=18)
+plt.ylabel('Actuals', fontsize=18)
+plt.title('Confusion Matrix', fontsize=18)
+plt.show()
+plt.savefig("Cnf matrix.jpg")
+print("Recall ", recall_score(y_test,y_pred,average = None))
+print("Precision ", precision_score(y_test,y_pred,average = None))
+print("F1 score ", f1_score(y_test,y_pred,average = None))
+print("Accuracy score ", accuracy_score(y_test,y_pred))
+plot_model(cnn, to_file='model_plot.png', show_shapes=True, show_layer_names=True , show_layer_activations=True)
+
+#cnn.save('CNNclass_1_20.h5')
