@@ -1,6 +1,6 @@
 # DrowsyDriverDetection
 
-Final Year project based on Deep Learning models and SVM to detect drowsiness  in heavy and light vehicle drivers
+Final Year project based on Deep Learning models and SVM to detect drowsiness  in heavy and light vehicle drivers. For more details read detailed project report.
 
 <h2><li>Dependencies</h2>
 <ul>python 3.8 or above</ul>
@@ -26,7 +26,7 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
     </ul>
 </ul>
 <ul>Install sklearn
-    <ul><code>python3 -m pip install scikit-learn</code>
+    <ul><code>py -m pip install scikit-learn</code>
     </ul>
 </ul>
 </li>
