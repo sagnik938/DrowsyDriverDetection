@@ -30,12 +30,18 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
     </ul>
 </ul>
 </li>
-
-<h2><li>Set up and run the model</h2>
-<ul><code>cd &lt directory name&gt </code></ul>
-<ul><code>git init</code></ul>
-<ul><code>git remote add origin "&lt https url &gt"</code></ul>
-<ul><code>git pull origin "&ltbranch name&gt"</code></ul>
-<ul><code>py modeltesting.py</code></ul>
+<h2><li>Model Descriptions<h2>
+<ul><h3>RCNN Based Classifier :</h3>
+        <p> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer<br> followed by 2D max pooling and two dense layers 
+             one having 128 (relu activated) and output layer having 4 neurons using softmax activation function.<br> The model uses adam optimizer and categorical cross-entropy as 
+             the loss function.</p>
+</ul>
+<ul><h3>SVM Based Classifier :</h3>
+        <p> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer<br> followed by 2D max pooling and two dense layers 
+             one having 128 (relu activated) and output layer having 4 neurons using l2 kernel regularization, activation function as softmax.<br>The Model compiles with adam optimizer and squared hinge as a loss function. A pre-trained sample is saved as SVM_1_20.h5.<br>Use the Keras load model to use and test and access the training report
+             for detailed overview. </p>
+</ul>
 </li>
+
+
 
