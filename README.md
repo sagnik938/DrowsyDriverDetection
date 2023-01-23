@@ -32,14 +32,14 @@ Final Year project based on Deep Learning models and SVM to detect drowsiness  i
 </li>
 <h2><li>Model Descriptions<h2>
 <h2><ul>RCNN Based Classifier :</h2>
-        <p> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer<br> followed by 2D max pooling and two dense layers 
-             one having 128 (relu activated) and output layer having 4 neurons using softmax activation function.<br> The model uses adam optimizer and categorical cross-entropy as 
-             the loss function.</p>
+        <div> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer followed by 2D max pooling and two dense layers 
+             one having 128 (relu activated) and output layer having 4 neurons using softmax activation function. The model uses adam optimizer and categorical cross-entropy as 
+             the loss function.</div>
 </ul>
 <h2><ul>SVM Based Classifier :</h2>
-        <p> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer<br> followed by 2D max pooling and two dense layers 
-             one having 128 (relu activated) and output layer having 4 neurons using l2 kernel regularization, activation function as softmax.<br>The Model compiles with adam optimizer and squared hinge as a loss function. A pre-trained sample is saved as SVM_1_20.h5.<br>Use the Keras load model to use and test and access the training report
-             for detailed overview. </p>
+        <div> This model implements a simple RCNN neural net with 0.25 dropouts, relu activation function for the CNN layer followed by 2D max pooling and two dense layers 
+             one having 128 (relu activated) and output layer having 4 neurons using l2 kernel regularization, activation function as softmax. The Model compiles with adam optimizer and squared hinge as a loss function. A pre-trained sample is saved as SVM_1_20.h5. Use the Keras load model to use and test and access the training report
+             for detailed overview. </div>
 </ul>
 </li>
 
